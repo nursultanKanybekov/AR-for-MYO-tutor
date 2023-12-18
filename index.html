@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/2.0.8/aframe/build/aframe-ar.js"></script>
+</head>
+<body>
+    <a-scene embedded arjs="trackingMethod: best;">
+        <a-marker preset="hiro">
+            <!-- Your 3D model goes here -->
+            <a-entity position="0 0 0"
+                      scale="0.05 0.05 0.05"
+                      rotation="0 180 0"
+                      gltf-model="url(nurs.obj)"></a-entity>
+        </a-marker>
+        <a-entity camera></a-entity>
+    </a-scene>
+</body>
+</html>
